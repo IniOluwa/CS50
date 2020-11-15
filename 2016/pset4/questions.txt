@@ -1,0 +1,64 @@
+0.  A png file supports 256 colors with 24-bit pixels.
+    A bmp file supports 16,777,216 colors with 24-bit pixels.
+    A gif file supports 8-bit pixels per image which has 256 colors.
+    A jpeg file supports 24-bit of color depth which is 16.7 million colors.
+    
+    
+1.  The gif format supportes animation.
+
+
+2.  Lossy compression discards parts of the file and the uncompressed file is inexact.
+    Lossless compression recovers the exact file after uncompression, losing no part of the file.
+
+
+3.  The jpeg format is lossy compressed.
+
+
+4.  The system changes the filename's first character in the file's directory entry to show that the FAT file has been deleted and the directory can be recycled and then the system moves the FAT file clusters to the free clusters in the harddrive.
+
+
+5.  I would overwrite the file addresses with random characters, then overwrite against the character's complement, then verify, then destroy the drive(just to be safe).
+
+
+6.  stdint.h declares integer types with specified widths and also defines corresponding sets of marcos that specify limits of integer types corresponding to types defined in other standard headers.
+
+
+7.  It is important to use this specific values in dealing with bits, so the exact efficient results that are needed can be achieved.
+
+
+8.  A BYTE is 1byte.
+    A DWORD is 4bytes.
+    A long is 4bytes.
+    A WORD is 2bytes.
+
+
+9.  0x4D42.
+    BM.
+
+
+10. bfsize stores the size of the whole bmp file, the size of image + the size of the headers.
+    bisize stores the size of the image, the size of RGBTRIPLE + the size of the padding.
+
+
+11. When biHeight is negative, the bitmap is top-down and it's origin is the upper-left corner of the image.
+
+
+12. The biBitCount member of the BITMAPINFOHEADER structure specifies the BMP's color depth.
+
+
+13. fopen will return NULL if the file to write to cannot be created.
+
+
+14. The program is reads in 1 RGB triple at a time.
+
+
+15. 3 pixels * 3 bytes + 3 bytes = 12bytes.
+
+
+16. fseek skips over any padding and looks for the next pixel RGBTRIPLE.
+
+
+17. This is an integer constant which specifies that the offset provided is relative to the current file position when used as a reference to fseek or fseeko.
+
+
+18. Rob Bowden.
